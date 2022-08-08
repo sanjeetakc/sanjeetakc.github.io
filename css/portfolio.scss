@@ -69,7 +69,6 @@ $secondarycolor: #C4D7E5;
     width: 100%;
     height: 90%;
 
-
 }
 
 .profile-image-container {
@@ -101,33 +100,211 @@ $secondarycolor: #C4D7E5;
 
 }
 
-.profile-info-container , .profile-skill-container{
-    width: 100%;
+.profile-header-description-detail {
+    width: 50%;
+    display: flex;
+    height: 100%;
+    position: relative;
+
+}
+
+.profile-header-description-detail,
+.profile-header-skill-detail {
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+}
+
+.profile-info-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.profile-info-container .small-intro {
+    text-align: center;
+    margin-top: 10%;
+    position: relative;
+
+}
+
+.skill-description {
+    margin-top: 10%;
     height: 100%;
 
 }
 
-.profile-header-description-detail {
-    width: 50%;
+.skill-description .skill-box {
+    margin-top: 5%;
 
 }
 
-.profile-header-top-right span{
+.skill-description .skill {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.skill-level-html {
+    background-color: #FFC0CB;
+    box-sizing: border-box;
+    border: 1px solid #52ab98;
+    border-radius: 3px;
+    height: 8px;
+    animation: progresshtml 3s normal forwards;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, .1);
+}
+
+.skill-level-css {
+    background-color: #FFC0CB;
+    box-sizing: border-box;
+    border: 1px solid #52ab98;
+    border-radius: 3px;
+    height: 8px;
+    animation: progresscss 3s normal forwards;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, .1);
+}
+
+.skill-level-js {
+    background-color: #FFC0CB;
+    box-sizing: border-box;
+    border: 1px solid #52ab98;
+    border-radius: 3px;
+    height: 8px;
+    animation: progressjs 3s normal forwards;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, .1);
+}
+
+.skill-level-xamarin {
+    background-color: #FFC0CB;
+    box-sizing: border-box;
+    border: 1px solid #52ab98;
+    border-radius: 3px;
+    height: 8px;
+    animation: progressxm 3s normal forwards;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, .1);
+}
+
+.skill-level-native {
+    background-color: #FFC0CB;
+    box-sizing: border-box;
+    border: 1px solid #52ab98;
+    border-radius: 3px;
+    height: 8px;
+    animation: progressnative 3s normal forwards;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, .1);
+}
+
+@keyframes progresshtml {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes progresscss {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes progressjs {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes progressxm {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progressnative {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.profile-header-top-right span {
     border-top: 3px solid #fffbf0;
 }
-.profile-header-top-right span:active{
+
+.profile-header-top-right span:active {
     border-top: 3px solid #000;
 }
-.profile-info-container p {
+
+#profile-skill {
+    display: none;
+}
+
+.profile-skill-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-skill-container img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 5px;
+    height: 5px;
     text-align: center;
-   
+    text-decoration: none;
+    border-radius: 30px;
 }
-#profile-info{
-    display: block
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
 }
-#profile-skill{
-display: none;
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-linkedin {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-github {
+    background: #000;
+    color: white;
 }
